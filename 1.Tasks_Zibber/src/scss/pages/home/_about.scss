@@ -1,0 +1,109 @@
+#about{
+    .about_img{
+        position: relative;
+        width: 500px;
+        height: 700px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .shape{
+            position: absolute;
+            top: 100px;
+            left: -27px;
+            z-index: -1;
+            img{
+               max-width: 100%; 
+            }
+        }
+        &::after{
+            position: absolute;
+    bottom: 20px;
+    right: -100px;
+    content: "";
+    width: 100%;
+    height: 320px;
+    border-radius: 20px;
+    background: #8aa29a;
+    z-index: -1;
+        }
+    }
+    .about_txt{
+        .about_title{
+            margin-bottom: 25px;
+            p{
+                font-size: 18px;
+                color: #4636ff;
+                font-weight: 700;
+            }
+            h2{
+                font-size: 70px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #1f1841;
+            }
+        }
+        p{
+            font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+        }
+        ul{
+           
+            li{
+               margin-top: 10px;
+                span{
+                    width: 20px;
+                    height: 20px;
+                    background-color: #ecebff;
+                    border-radius: 50%;
+                    padding: 2px 4px ;
+                    i{
+                        color: #1f1841;
+                    }
+
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #1f1841;
+                    position: relative;
+                    padding-left: 30px;
+
+                }
+                &:hover{
+                    span{
+                        background-color: #4636ff;
+                       i{
+                        color: white;
+                       }
+                    }
+                    a{
+                        color: #4636ff;
+                    }
+                }
+
+            }
+        }
+        .btn{
+            margin-top: 50px;
+            height: 54px;
+    line-height: 48px;
+    border: 2px solid #4636ff;
+    background: #4636ff;
+    color: #ffffff;
+    padding: 0 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-transform: capitalize;
+    min-width: 160px;
+    text-align: center;
+    transition: .4s ease-in-out;
+    &:hover{
+        background-color: #ffffff;
+color: #4636ff;
+    }
+        }
+    }
+}

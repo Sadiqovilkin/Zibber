@@ -1,0 +1,111 @@
+#team_area{
+    .team_card{
+        position: relative;
+        padding: 30px 35px;
+    background: #423d7c;
+    border-radius: 20px;
+    .card_img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        img{width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+        }
+    }
+    .card_content{
+        text-align: center;
+        h3{
+            font-size: 22px;
+    margin-bottom: 0;
+   
+    text-transform: capitalize;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+        }
+        p{
+            font-size: 15px;
+            color: #cac9d3;
+        }
+    }
+.card_hover_content{
+    z-index: 5;
+    transition: .4s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 25px;
+    h3{
+        font-size: 22px;
+margin-bottom: 0;
+
+text-transform: capitalize;
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+    }
+    p{
+        font-size: 15px;
+        color: #cac9d3;
+    }
+}
+.social_icons{
+    z-index: 5;
+    position: absolute;
+    bottom: 25px;
+    opacity: 0;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: .4s ease-in-out;
+    .icon{
+        width: 40px;
+    height: 40px;
+    padding: 6px 0 0;
+  border-radius: 6px;
+    text-align: center;
+    background: #7b23de;
+    transition: .3s ease-in-out;
+        i{
+color: #ffffff;
+            font-size: 22px;
+            margin: 2px 5px;
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: white;
+            i{
+                color: #7b23de;
+            }
+        }
+    }
+}
+&::after{
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-130deg, #dd24ff 0%, #841ff9 100%);
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+&:hover{
+    &::after{
+        opacity: 1;
+    }
+    .card_hover_content{
+        opacity: 1;
+    }
+    .social_icons{
+        opacity: 1;
+    }
+}
+ }
+}
